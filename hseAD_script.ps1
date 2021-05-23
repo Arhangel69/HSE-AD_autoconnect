@@ -46,6 +46,6 @@ if (($netIPConfiguration.NetProfile.Name.contains('HSE-AD')) -and ((Test-NetConn
 	if ((Test-NetConnection).PingSucceeded -eq $false)
 	{
 		echo 'Autoconnect not available. Force connect'
-		."C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" https://wifi.mts.ru/redirect.php
+		."<path-to-chrome.exe>" https://wifi.mts.ru/redirect.php
 	}
 }
