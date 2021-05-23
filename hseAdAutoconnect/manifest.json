@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "content_scripts": [ {
+        "exclude_globs":    [  ],
+        "include_globs":    [ "*" ],
+        "js":               [ "hseAD.user.js" ],
+        "include":          [ "https://wifi.mts.ru/?page=confirm*" ],
+        "matches":          [ "https://wifi.mts.ru/?page=confirm*" ],
+        "run_at": "document_end"
+    } ],
+    "converted_from_user_script": true,
+    "description":  "It helps users connect to HSE-AD",
+    "name":         "hseAD Autoconnect",
+    "version":      "0.0.1"
+}
