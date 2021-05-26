@@ -47,5 +47,8 @@ if (($netIPConfiguration.NetProfile.Name.contains('HSE-AD')) -and ((Test-NetConn
 	{
 		echo 'Autoconnect not available. Force connect'
 		."<path-to-chrome.exe>" https://wifi.mts.ru/redirect.php
+		Return
 	}
 }
+
+echo 'Connection Good or your Network is not "HSE-AD"'
